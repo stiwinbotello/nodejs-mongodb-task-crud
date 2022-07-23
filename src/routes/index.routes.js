@@ -8,11 +8,22 @@ import {
   taskToggleDone,
   renderTaskEdit,
   editTask,
+  home,
 } from "../controllers/tasks.controllers";
 
 const router = Router();
 
 router.get("/", renderTask);
+
+
+
+router.get("/home", home);
+
+
+
+
+
+
 
 router.post("/tasks/add", createTask);
 

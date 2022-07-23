@@ -1,28 +1,28 @@
 <div class="card card-body p-4 rounded-0 bg-dark text-white">
-  <h3>Add A Task</h3>
+  <h3>Agregar Comentario</h3>
   <form action="/tasks/add" method="post">
 
     {{! Title Input }}
     <div class="mb-3">
-      <label for="title">Write a title:</label>
+      <label for="title">Nombre Completo:</label>
       <input
         id="title"
         class="form-control rounded-0 bg-dark text-white"
         type="text"
         name="title"
-        placeholder="Title"
+        placeholder="Nombre"
         autofocus
       />
     </div>
 
     {{! Description Input }}
     <div class="mb-3">
-      <label for="description">Description</label>
+      <label for="description">Comentario</label>
       <textarea
         class="form-control rounded-0 bg-dark text-white"
         name="description"
         cols="80"
-        placeholder="Add a Description"
+        placeholder="Agrega un comentario"
       ></textarea>
     </div>
 

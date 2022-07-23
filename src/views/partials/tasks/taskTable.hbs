@@ -3,8 +3,8 @@
     <thead>
       <tr>
         <th>N°</th>
-        <th>Title</th>
-        <th>Description</th>
+        <th>Nombre</th>
+        <th>Comentario</th>
         <th>Operations</th>
       </tr>
     </thead>
@@ -19,17 +19,17 @@
               <a
                 class="btn btn-success"
                 href="/tasks/{{_id}}/toggleDone"
-              >Done</a>
+              >visto</a>
             {{else}}
               <a class="btn btn-dark" href="/tasks/{{_id}}/toggleDone">
-                Undone
+                sin ver
               </a>
             {{/if}}
             <a href="/tasks/{{_id}}/delete" class="btn btn-danger">
-              Delete
+              Borrar
             </a>
             <a href="/tasks/{{_id}}/edit" class="btn btn-info">
-              Edit
+              Editar
             </a>
           </td>
         </tr>

@@ -5,6 +5,24 @@ export const renderTask = async (req, res) => {
   res.render("index", { tasks: tasks });
 };
 
+
+
+
+
+
+export const home = async (req, res) => {
+  const tasks = await Task.find().lean();
+  res.render("home", { tasks: tasks });
+};
+
+
+// router.get("/home", (req, res) => res.render("index.ejs", {title: "principal"}));
+
+
+
+
+
+
 export const createTask = async (req, res) => {
   try {
     const task = Task(req.body);
@@ -40,6 +58,7 @@ export const deleteTask = async (req, res) => {
 
   res.redirect("/");
 };
+
 
 export const taskToggleDone = async (req, res) => {
   const { id } = req.params;
